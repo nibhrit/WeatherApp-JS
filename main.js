@@ -8,7 +8,7 @@ searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt){
     if(evt.keyCode == 13) {
-        getResults(searchbox.value);
+        getResults(searchbox.value.trim());
         
     }
 }
@@ -49,3 +49,4 @@ function dataBuilder(d){
 
   return `${day} ${date} ${month} ${year}`;
 }
+
